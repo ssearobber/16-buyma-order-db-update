@@ -2,7 +2,7 @@ const { GoogleSpreadsheet } = require('google-spreadsheet');
 const Order = require('../models/order');
 const dayjs = require('dayjs');
 
-async function googleOrderSheet(transactionID) {
+async function googleOrderSheet() {
   // 시트 url중 값
   // Initialize the sheet - doc ID is the long id in the sheets URL
   const doc = new GoogleSpreadsheet(process.env.GOOGLE_SPREAD_ID || googleSpreadId);
